@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"name": "mmmm",
+			"path": "../../../mmmm"
+		},
+		{
+			"name": "public",
+			"path": "../../public"
+		},
+		{
+			"name": "src",
+			"path": ".."
+		},
+		{
+			"name": "back",
+			"path": "../../back"
+		}
+	]
+}

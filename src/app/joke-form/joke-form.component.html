@@ -1,0 +1,19 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="jokeForm" class="mb-4">
+  <div class="form-group">
+    <label for="prompt">Enter a prompt</label>
+    <input
+      type="text"
+      id="prompt"
+      class="form-control"
+      formControlName="prompt"
+      placeholder="Tell me a long joke (at least 150 characters)"
+      required
+    />
+    <div *ngIf="prompt.invalid && prompt.touched" class="text-danger">
+      The prompt must be at least 150 characters long.
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary" [disabled]="jokeForm.invalid">
+    Enviar
+  </button>
+</form>
